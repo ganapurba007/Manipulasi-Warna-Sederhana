@@ -66,5 +66,4 @@ document.body.addEventListener('mousemove', function(event){
 	const yPos = Math.round((event.clientY / window.innerHeight) * 255);
 	// Atur Komposisi Warna
 	document.body.style.backgroundColor = 'rgb('+ xPos +', '+ yPos +', 100)';
-
 });
