@@ -56,3 +56,15 @@ sBiru.addEventListener('input', function(){
 	const b = sBiru.value;
 	document.body.style.backgroundColor = 'rgb('+ r +', '+ g +', '+ b +')';
 });
+
+
+// Mouse Move
+document.body.addEventListener('mousemove', function(event){
+	// Sumbu X
+	const xPos = Math.round((event.clientX / window.innerWidth) * 255);
+	// Sumbu Y
+	const yPos = Math.round((event.clientY / window.innerHeight) * 255);
+	// Atur Komposisi Warna
+	document.body.style.backgroundColor = 'rgb('+ xPos +', '+ yPos +', 100)';
+
+});
