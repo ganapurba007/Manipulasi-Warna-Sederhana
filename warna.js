@@ -32,7 +32,27 @@ tombol.forEach(function(button){
 const sMerah = document.getElementById('sMerah');
 sMerah.addEventListener('input', function(){
 	const r = sMerah.value;
-	document.body.style.backgroundColor = 'rgb('+ r +', 100, 100)';
+	const g = sHijau.value;
+	const b = sBiru.value;
+	document.body.style.backgroundColor = 'rgb('+ r +', '+ g +', '+ b +')';
 });
 
 
+// Slider Hijau
+const sHijau = document.getElementById('sHijau');
+sHijau.addEventListener('input', function(){
+	const r = sMerah.value;
+	const g = sHijau.value;
+	const b = sBiru.value;
+	document.body.style.backgroundColor = 'rgb('+ r +', '+ g +', '+ b +')';
+});
+
+
+// Slider Biru
+const sBiru = document.getElementById('sBiru');
+sBiru.addEventListener('input', function(){
+	const r = sMerah.value;
+	const g = sHijau.value;
+	const b = sBiru.value;
+	document.body.style.backgroundColor = 'rgb('+ r +', '+ g +', '+ b +')';
+});
