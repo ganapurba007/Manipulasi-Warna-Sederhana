@@ -26,5 +26,13 @@ tombol.forEach(function(button){
 	button.style.margin = '10px';
 	button.style.padding = '5px';
 	button.style.fontSize = '15px'
-})
+});
+
+// Slider Merah
+const sMerah = document.getElementById('sMerah');
+sMerah.addEventListener('input', function(){
+	const r = sMerah.value;
+	document.body.style.backgroundColor = 'rgb('+ r +', 100, 100)';
+});
+
 
